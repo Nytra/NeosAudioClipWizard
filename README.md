@@ -1,5 +1,7 @@
 # NeosAudioClipWizard
 
+![20230615045133_1](https://github.com/Nytra/NeosAudioClipWizard/assets/14206961/bf5038c8-ea8e-4fea-a876-a923c4eaebf7)
+
 A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that does provides a wizard for batch processing all StaticAudioClips in a hierarchy.
 
 ## Installation
