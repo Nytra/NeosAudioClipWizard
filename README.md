@@ -4,6 +4,8 @@
 
 A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that provides a wizard for batch processing all StaticAudioClips in a hierarchy.
 
+The wizard can be found in the DevTip 'Create New' menu under Editors/Audio Clip Wizard (Mod). 
+
 ## Installation
 1. Install [NeosModLoader](https://github.com/zkxs/NeosModLoader).
 1. Place [AudioClipWizard.dll](https://github.com/Nytra/NeosAudioClipWizard/releases/latest/download/AudioClipWizard.dll) into your `nml_mods` folder. This folder should be at `C:\Program Files (x86)\Steam\steamapps\common\NeosVR\nml_mods` for a default install. You can create it if it's missing, or if you launch the game once with NeosModLoader installed it will create the folder for you.
