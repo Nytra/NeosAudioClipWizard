@@ -6,9 +6,9 @@ using NeosModLoader;
 using System.Reflection;
 using System.Collections.Generic;
 
-namespace NeosAudioConversionWizard
+namespace NeosAudioClipWizard
 {
-	public class NeosAudioConversionWizard : NeosMod
+	public class NeosAudioClipWizard : NeosMod
 	{
 		public override string Name => "Audio Clip Wizard";
 		public override string Author => "Nytra";
@@ -21,14 +21,14 @@ namespace NeosAudioConversionWizard
 		}
 		void AddMenuOption()
 		{
-			DevCreateNewForm.AddAction("Editor", WIZARD_TITLE, (x) => AudioConversionWizard.CreateWizard(x));
+			DevCreateNewForm.AddAction("Editor", WIZARD_TITLE, (x) => AudioClipWizard.CreateWizard(x));
 		}
 
-		class AudioConversionWizard
+		class AudioClipWizard
 		{
-			public static AudioConversionWizard CreateWizard(Slot x)
+			public static AudioClipWizard CreateWizard(Slot x)
 			{
-				return new AudioConversionWizard(x);
+				return new AudioClipWizard(x);
 			}
 			Slot WizardSlot;
 			readonly ReferenceField<Slot> processingRoot;
@@ -79,7 +79,7 @@ namespace NeosAudioConversionWizard
                 boolCopy.Target.Value = b.EnabledField.ReferenceID;
             }
 
-			AudioConversionWizard(Slot x)
+            AudioClipWizard(Slot x)
 			{
 				WizardSlot = x;
 				WizardSlot.Tag = "Developer";
