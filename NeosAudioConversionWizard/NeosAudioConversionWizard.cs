@@ -10,7 +10,7 @@ namespace NeosAudioClipWizard
 {
 	public class NeosAudioClipWizard : NeosMod
 	{
-		public override string Name => "Audio Clip Wizard";
+		public override string Name => "AudioClipWizard";
 		public override string Author => "Nytra";
 		public override string Version => "1.0.0";
 		public override string Link => "https://github.com/Nytra/NeosAudioClipWizard";
