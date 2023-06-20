@@ -72,11 +72,11 @@ namespace NeosAudioClipWizard
                 var stringField = b.Slot.AttachComponent<ValueField<string>>();
                 stringField.Value.Value = str;
                 var stringCopy = b.Slot.AttachComponent<ValueCopy<string>>();
-                stringCopy.Source.Value = stringField.Value.ReferenceID;
-                stringCopy.Target.Value = b.LabelTextField.ReferenceID;
+                stringCopy.Source.Target = stringField.Value;
+                stringCopy.Target.Target = b.LabelTextField;
                 var boolCopy = b.Slot.AttachComponent<ValueCopy<bool>>();
-                boolCopy.Source.Value = boolField.Value.ReferenceID;
-                boolCopy.Target.Value = b.EnabledField.ReferenceID;
+                boolCopy.Source.Target = boolField.Value;
+                boolCopy.Target.Target = b.EnabledField;
             }
 
             AudioClipWizard(Slot x)
@@ -96,7 +96,7 @@ namespace NeosAudioClipWizard
 
 				Slot Data = WizardSlot.AddSlot("Data");
 				processingRoot = Data.AddSlot("processingRoot").AttachComponent<ReferenceField<Slot>>();
-				//processingRoot.Reference.Value = WizardSlot.World.RootSlot.ReferenceID;
+				//processingRoot.Reference.Target = WizardSlot.World.RootSlot;
 				radioField = Data.AddSlot("radioField").AttachComponent<ValueField<int>>();
 
 				UIBuilder UI = new UIBuilder(canvasPanel.Canvas);
