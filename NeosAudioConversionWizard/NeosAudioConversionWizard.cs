@@ -12,7 +12,7 @@ namespace NeosAudioClipWizard
 	{
 		public override string Name => "AudioClipWizard";
 		public override string Author => "Nytra";
-		public override string Version => "1.0.0";
+		public override string Version => "1.0.1";
 		public override string Link => "https://github.com/Nytra/NeosAudioClipWizard";
 		const string WIZARD_TITLE = "Audio Clip Wizard (Mod)";
 		public override void OnEngineInit()
